@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Store.Domain {
+namespace Store.Domain.Domains {
     public class Feature {
         [Key]
         public int ID { get; set; }

@@ -49,15 +49,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Feature.cs" />
-    <Compile Include="FeatureValue.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="ProductType.cs" />
+    <Compile Include="Domains\Feature.cs" />
+    <Compile Include="Domains\FeatureValue.cs" />
+    <Compile Include="Domains\Product.cs" />
+    <Compile Include="Domains\ProductType.cs" />
+    <Compile Include="Interfaces\IFeatureRepository.cs" />
+    <Compile Include="Interfaces\IFeatureValueRepository.cs" />
+    <Compile Include="Interfaces\IProductRepository.cs" />
+    <Compile Include="Interfaces\IStoreDbContext.cs" />
+    <Compile Include="Interfaces\IProductTypeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using Store.Domain.Interfaces;
 
 namespace Store.Repository {
     public class BaseRepository<T> where T : class {
 
         internal StoreDbContext _context;
 
-        internal BaseRepository(StoreDbContext context) {
+        internal BaseRepository(IStoreDbContext context) {
             _context = context as StoreDbContext;
         }
 

@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-using Store.Domain;
+using Store.Domain.Domains;
+using Store.Domain.Interfaces;
 
 namespace Store.Repository {
-    public class ProductRepository : BaseRepository<Product> {
-        internal ProductRepository(StoreDbContext context) : base(context) {
+    public class ProductRepository : BaseRepository<Product>, IProductRepository
+    {
+        internal ProductRepository(IStoreDbContext context) : base(context) {
 
         }
     }

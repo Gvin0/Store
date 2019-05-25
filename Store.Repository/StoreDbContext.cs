@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using Store.Repository.Migrations;
-using Store.Domain;
+using Store.Domain.Domains;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using Store.Domain.Interfaces;
 
 namespace Store.Repository {
-    public class StoreDbContext : DbContext {
+    public class StoreDbContext : DbContext, IStoreDbContext {
         public StoreDbContext() : base("name = StoreDbContext") {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<StoreDbContext, Configuration>());
         }
