@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Store.Domain {
+    public class ProductType {
+        [Key]
+        public int ID { get; set; }
+
+        [Required, MaxLength(50)]
+        public string ProductTypeName { get; set; }
+
+        [Required, MaxLength(200)]
+        public string ProductTypeDescription { get; set; }
+
+        public virtual ICollection<Product> Products  { get; set; }
+
+        public virtual ICollection<FeatureValue> FeatureValues { get; set; }
+    }
+}
