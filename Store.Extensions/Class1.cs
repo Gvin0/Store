@@ -8,6 +8,9 @@ namespace Store.Extensions
 {
     public class Class1
     {
-        Console.WriteLine();
+        public void Test()
+        {
+            Console.WriteLine();
+        }
     }
 }
