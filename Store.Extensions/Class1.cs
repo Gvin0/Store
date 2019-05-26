@@ -8,5 +8,6 @@ namespace Store.Extensions
 {
     public class Class1
     {
+        Console.WriteLine();
     }
 }
