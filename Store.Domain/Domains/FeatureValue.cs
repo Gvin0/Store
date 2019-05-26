@@ -14,7 +14,7 @@ namespace Store.Domain.Domains
         [Required, MaxLength(50)]
         public string FeatureValueName { get; set; }
 
-        [Required, MaxLength(200)]
+        [Required, MaxLength(500)]
         public string FeatureValueDesc { get; set; }
 
         public virtual ICollection<Feature> Features { get; set; }
