@@ -16,9 +16,11 @@ namespace Store.Repository {
         }
 
         public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<Feature> Features { get; set; }
-        public virtual DbSet<FeatureValue> FeatureValues { get; set; }
-        public virtual DbSet<ProductType> ProductTypes { get; set; }
+        public virtual DbSet<TemplateProperty> TemplateProperties { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<ProductTemplate> ProductTemplates { get; set; }
+        public virtual DbSet<PropertyValue> PropertyValues { get; set; }
+        public virtual DbSet<Property> Properties { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder) {
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();

@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace Store.Domain.Domains
 {
-    public class FeatureValue {
+    public class TemplateProperty {
         [Key]
         public int ID { get; set; }
 
         [Required, MaxLength(50)]
-        public string FeatureValueName { get; set; }
+        public string Name { get; set; }
 
         [Required, MaxLength(500)]
-        public string FeatureValueDesc { get; set; }
+        public string Description { get; set; }
 
-        public virtual ICollection<Feature> Features { get; set; }
+        public virtual ProductTemplate ProductTemplate { get; set; }
 
-        public virtual ICollection<ProductType> ProductTypes { get; set; }
+        public virtual Property Property { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
     }

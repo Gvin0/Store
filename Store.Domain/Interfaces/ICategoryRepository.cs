@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Store.Domain.Interfaces
-{
-    public interface IFeatureRepository
-    {
+namespace Store.Domain.Interfaces {
+    public interface ICategoryRepository {
     }
 }

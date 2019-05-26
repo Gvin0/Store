@@ -7,9 +7,8 @@ using Store.Domain.Domains;
 using Store.Domain.Interfaces;
 
 namespace Store.Repository {
-    public class FeatureValueRepository : BaseRepository<FeatureValue>, IFeatureValueRepository
-    {
-        internal FeatureValueRepository(IStoreDbContext context) : base(context) {
+    public class TemplatePropertyRepository : BaseRepository<TemplateProperty>, ITemplatePropertyRepository {
+        internal TemplatePropertyRepository(IStoreDbContext context) : base(context) {
 
         }
     }

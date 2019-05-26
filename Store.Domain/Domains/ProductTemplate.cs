@@ -6,16 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Domain.Domains {
-    public class Feature {
+    public class ProductTemplate {
         [Key]
         public int ID { get; set; }
 
         [Required, MaxLength(50)]
-        public string FeatureName { get; set; }
+        public string Name { get; set; }
 
-        [Required, MaxLength(200)]
-        public string FeatureDescription { get; set; }
-
-        public virtual FeatureValue FeatureValues { get; set; }
+        public virtual ICollection<Category> Categories { get; set; }
     }
 }

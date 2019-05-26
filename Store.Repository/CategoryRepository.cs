@@ -7,9 +7,9 @@ using Store.Domain.Domains;
 using Store.Domain.Interfaces;
 
 namespace Store.Repository {
-    public class FeatureRepository : BaseRepository<Feature>, IFeatureRepository
+    public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
     {
-        internal FeatureRepository(IStoreDbContext context) : base(context) {
+        internal CategoryRepository(IStoreDbContext context) : base(context) {
 
         }
     }

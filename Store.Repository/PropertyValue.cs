@@ -7,9 +7,8 @@ using Store.Domain.Domains;
 using Store.Domain.Interfaces;
 
 namespace Store.Repository {
-    public class ProductTypeRepository : BaseRepository<ProductType>, IProductTypeRepository
-    {
-        internal ProductTypeRepository(IStoreDbContext context) : base(context) {
+    public class PropertyValueRepository : BaseRepository<PropertyValue>, IPropertyValueRepository {
+        internal PropertyValueRepository(IStoreDbContext context) : base(context) {
 
         }
     }
