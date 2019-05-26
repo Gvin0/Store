@@ -49,7 +49,7 @@ namespace G05_Store
             // container.RegisterType<IProductRepository, ProductRepository>();
 
             // aq gadasaxedia servicebis dainjectebis dros resolves ar gaaketes 
-            // gasatvaliswinebelia yvela assemblydan rom wamoigos
+            // gasatvaliswinebelia yvela assemblydan rom wamoigos!!!
 
             var interfaces = typeof(Product).Assembly.GetTypes()
                 .Where(t => t.IsInterface && t != typeof(IStoreDbContext));
