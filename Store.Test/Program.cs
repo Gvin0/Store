@@ -37,7 +37,6 @@ namespace Store.Test {
                 TemplateProperty = templateProperty,
                 TextValue = templateProperty.Title
             };
-
             
 
             Console.ReadKey();
