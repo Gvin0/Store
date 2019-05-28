@@ -21,6 +21,8 @@ namespace Store.Domain.Domains
         [Required, MaxLength(500)]
         public string Description { get; set; }
 
+        public string Quantity { get; set; }
+
         public virtual ProductTemplate ProductTemplate { get; set; }
     }
 }
