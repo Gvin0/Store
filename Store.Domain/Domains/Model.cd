@@ -3,7 +3,7 @@
   <Class Name="Store.Domain.Domains.TemplateProperty">
     <Position X="7.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAggAAAAAAAAAQAACAAAAAAAAAAAQAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAgEAAAAAAAAAAACAAAAAAAAAAAQAAAAA=</HashCode>
       <FileName>Domains\TemplateProperty.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -24,7 +24,7 @@
   <Class Name="Store.Domain.Domains.Category">
     <Position X="0.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAggAAAAAAAAAQAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAggAAAAAAAAAQAAAAAEAAAAgAAAAACAAA=</HashCode>
       <FileName>Domains\Category.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -41,7 +41,7 @@
   <Class Name="Store.Domain.Domains.Product">
     <Position X="4" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAggAAAAAAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQAggAAAAAAAAAQAACAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Domains\Product.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -55,9 +55,51 @@
       <FileName>Domains\PropertyValue.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="TemplateProperty" />
       <Property Name="Product" />
+      <Property Name="TemplateProperty" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="Store.Domain.Domains.User">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Domains\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Domain.Domains.AdminUser">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domains\AdminUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Domain.Domains.CustomerUser">
+    <Position X="13" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domains\CustomerUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Domain.Domains.ExternalUser">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domains\ExternalUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Domain.Domains.InternalUser">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domains\InternalUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Domain.Domains.OperatorUser">
+    <Position X="17.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domains\OperatorUser.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

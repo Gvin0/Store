@@ -14,8 +14,7 @@ namespace Store.Test {
             ProductTemplate productTemplate = new ProductTemplate() { Name = "PC" };
 
             Property property = new Property() {
-                Title = "RAM",
-                Type = "Memory size"
+                Title = "RAM"
             };
 
             TemplateProperty templateProperty = new TemplateProperty() {

@@ -17,6 +17,5 @@ namespace Store.Domain.Domains
         public virtual ProductTemplate ProductTemplate { get; set; }
 
         public virtual Property Property { get; set; }
-        
     }
 }

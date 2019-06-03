@@ -6,23 +6,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Store.Domain.Domains
-{
-   public class Product {
-        [Key]
-        public int ID { get; set; }
-        
-        [Required, MaxLength(50)]
-        public string Name { get; set; }
+namespace Store.Domain.Domains {
+	public class Product {
+		[Key]
+		public int ID { get; set; }
 
-        [Column(TypeName ="money"),Required]
-        public string Price { get; set; }
+		[Required, MaxLength(50)]
+		public string Name { get; set; }
 
-        [Required, MaxLength(500)]
-        public string Description { get; set; }
+		[Column(TypeName = "money"), Required]
+		public decimal Price { get; set; }
 
-        public string Quantity { get; set; }
+		[Required, MaxLength(500)]
+		public string Description { get; set; }
 
-        public virtual ProductTemplate ProductTemplate { get; set; }
-    }
+		public string Quantity { get; set; }
+
+		public virtual ProductTemplate ProductTemplate { get; set; }
+	}
 }

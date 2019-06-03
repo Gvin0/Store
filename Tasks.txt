@@ -1,0 +1,23 @@
+daageneriret baza da sheqmenit shemdeg tempatebi
+1. computer
+	brandis saxeli
+	wona
+	korpusis tipi
+	operatiulis zoma
+	procesoris saxeoba
+	vinchesteris zoma
+2. wigni
+	avtori
+	janri
+	electronulia yes/no
+3. sakvebi
+	gamoshvebis tarigi
+	vargisianobis vada
+	sakvebis tipi
+
+titoeul kategoriashi (produqtis templateshi) davamatot 2-3 instance
+---------------------------------------
+
+davamatot shopping backet.
+davamatot wishlist (sasurvelia shemedzlos sxvadasxva wishlistebis damateba).
+movipiqrot sashualeba produqtebis ramenairad ertmanettan dakavshirebis (magalitat wignebis dros ertidaigive tomeulis wignebi ertat rom gamoitanos)

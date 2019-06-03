@@ -72,8 +72,8 @@
   <ItemGroup>
     <Compile Include="BaseRepository.cs" />
     <Compile Include="CategoryRepository.cs" />
-    <Compile Include="ProductTemplateRepository.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ProductTemplateRepository.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="PropertyRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
