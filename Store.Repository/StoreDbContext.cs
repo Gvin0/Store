@@ -7,12 +7,13 @@ using System.Data.Entity;
 using Store.Domain.Domains;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using Store.Domain.Interfaces;
+using Store.Repository.Migrations;
 
 namespace Store.Repository {
 	public class StoreDbContext : DbContext, IStoreDbContext {
 		public StoreDbContext() : base("name = StoreDbContext") {
-			//Database.SetInitializer(new MigrateDatabaseToLatestVersion<StoreDbContext, Configuration>());
-		}
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<StoreDbContext, Configuration>());
+        }
 
 		public virtual DbSet<Product> Products { get; set; }
 		public virtual DbSet<TemplateProperty> TemplateProperties { get; set; }

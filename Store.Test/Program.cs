@@ -9,34 +9,40 @@ using Store.Repository;
 namespace Store.Test {
     public class Program {
         static void Main(string[] args) {
-            Category category = new Category() { Name = "Computer parts and accessories" };
+            List<Category> list = new List<Category>();
 
-            ProductTemplate productTemplate = new ProductTemplate() { Name = "PC" };
-
-            Property property = new Property() {
-                Title = "RAM"
+            Category category = new Category() {
+                Name = "Computer Tech."
             };
-
+            list.Add(category);
+            ProductTemplate productTemplate = new ProductTemplate() {
+                Name = "PC",
+                Categories = list
+            };
+            Property property = new Property() {
+                Title = "Brand Name",
+                Type = 0
+            };
             TemplateProperty templateProperty = new TemplateProperty() {
                 ProductTemplate = productTemplate,
-                Property = property,
-                Title = "512Mb"
+                Property = property
             };
-
             Product product = new Product() {
-                ProductTemplate = productTemplate,
-                Name = "PC",
-                Description = "G05-PC V1",
-                Price = "1600",
-                Quantity = "10"
+                Name = "G05_PC",
+                Price = 1600.99m,
+                Description = "Only the best PC builds",
+                Quantity = 8,
+                ProductTemplate = productTemplate
             };
-
             PropertyValue propertyValue = new PropertyValue() {
+                TextValue = "G05",
                 Product = product,
-                TemplateProperty = templateProperty,
-                TextValue = templateProperty.Title
+                TemplateProperty = templateProperty
             };
-            
+            StoreDbContext storeDbContext = new StoreDbContext();
+
+            BaseRepository<Product> p = new BaseRepository<Product>(storeDbContext);
+            p.Save(product);
 
             Console.ReadKey();
         }

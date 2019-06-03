@@ -11,7 +11,7 @@ namespace Store.Repository {
 
         internal StoreDbContext _context;
 
-        internal BaseRepository(IStoreDbContext context) {
+        public BaseRepository(IStoreDbContext context) {
             _context = context as StoreDbContext;
         }
 

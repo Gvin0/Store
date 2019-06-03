@@ -9,7 +9,7 @@ namespace Store.Repository.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Store.Repository.StoreDbContext context)

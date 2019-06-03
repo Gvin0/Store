@@ -11,7 +11,7 @@ namespace Store.Domain.Domains
         [Key]
         public int ID { get; set; }
 
-        [Required, MaxLength(50)]
+        [MaxLength(50)]
         public string Title { get; set; }
 
         public virtual ProductTemplate ProductTemplate { get; set; }

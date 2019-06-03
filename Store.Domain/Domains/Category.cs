@@ -20,8 +20,6 @@ namespace Store.Domain.Domains {
         [ForeignKey("Parent")]
         public int ParentId { get; set; }
 
-
-
         public virtual Category Parent { get; set; }
 
         public virtual ICollection<Property> Properties { get; set; }

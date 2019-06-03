@@ -10,15 +10,11 @@ namespace Store.Domain.Domains {
         [Key]
         public int ID { get; set; }
 
-
         public bool BooleanValue { get; set; }
-
 
         public DateTime DateValue { get; set; }
 
-
         public int NumberValue { get; set; }
-
 
         public string TextValue { get; set; }
 
