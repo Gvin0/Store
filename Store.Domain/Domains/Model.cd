@@ -24,7 +24,7 @@
   <Class Name="Store.Domain.Domains.Category">
     <Position X="0.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAggAAAAAAAAAQAAAAAEAAAAgAAAAACAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAggAAAAAAAQAQAAAAAEAAAAgAAAAACAAA=</HashCode>
       <FileName>Domains\Category.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -58,13 +58,6 @@
       <Property Name="Product" />
       <Property Name="TemplateProperty" />
     </ShowAsAssociation>
-  </Class>
-  <Class Name="Store.Domain.Domains.User">
-    <Position X="14.75" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
-      <FileName>Domains\User.cs</FileName>
-    </TypeIdentifier>
   </Class>
   <Class Name="Store.Domain.Domains.AdminUser">
     <Position X="15.25" Y="6.5" Width="1.5" />
