@@ -10,21 +10,21 @@ using Store.Domain.Interfaces;
 using Store.Repository.Migrations;
 
 namespace Store.Repository {
-	public class StoreDbContext : DbContext, IStoreDbContext {
-		public StoreDbContext() : base("name = StoreDbContext") {
+    public class StoreDbContext : DbContext, IStoreDbContext {
+        public StoreDbContext() : base("name = StoreDbContext") {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<StoreDbContext, Configuration>());
         }
 
-		public virtual DbSet<Product> Products { get; set; }
-		public virtual DbSet<TemplateProperty> TemplateProperties { get; set; }
-		public virtual DbSet<Category> Categories { get; set; }
-		public virtual DbSet<ProductTemplate> ProductTemplates { get; set; }
-		public virtual DbSet<PropertyValue> PropertyValues { get; set; }
-		public virtual DbSet<Property> Properties { get; set; }
-		public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<TemplateProperty> TemplateProperties { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<ProductTemplate> ProductTemplates { get; set; }
+        public virtual DbSet<PropertyValue> PropertyValues { get; set; }
+        public virtual DbSet<Property> Properties { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
-		protected override void OnModelCreating(DbModelBuilder modelBuilder) {
-			modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-		}
-	}
+        protected override void OnModelCreating(DbModelBuilder modelBuilder) {
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+        }
+    }
 }

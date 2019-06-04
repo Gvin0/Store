@@ -82,6 +82,7 @@
     <Compile Include="Domains\Product.cs" />
     <Compile Include="Domains\Category.cs" />
     <Compile Include="Domains\User.cs" />
+    <Compile Include="Domains\Wishlist.cs" />
     <Compile Include="Interfaces\ICategoryRepository.cs" />
     <Compile Include="Interfaces\IProductTemplateRepository.cs" />
     <Compile Include="Interfaces\IProductRepository.cs" />

@@ -45,5 +45,9 @@ namespace Store.Repository {
             set.Remove(entity);
         }
 
+        public virtual void Commit() {
+            _context.SaveChanges();
+        }
+
     }
 }

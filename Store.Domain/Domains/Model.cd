@@ -94,5 +94,12 @@
       <FileName>Domains\OperatorUser.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Store.Domain.Domains.User">
+    <Position X="14.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Domains\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

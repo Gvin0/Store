@@ -13,7 +13,7 @@ namespace Store.Domain.Domains
 
         [MaxLength(50)]
         public string Title { get; set; }
-
+        
         public virtual ProductTemplate ProductTemplate { get; set; }
 
         public virtual Property Property { get; set; }

@@ -18,6 +18,6 @@ daageneriret baza da sheqmenit shemdeg tempatebi
 titoeul kategoriashi (produqtis templateshi) davamatot 2-3 instance
 ---------------------------------------
 
-davamatot shopping backet.
+davamatot shopping basket.
 davamatot wishlist (sasurvelia shemedzlos sxvadasxva wishlistebis damateba).
 movipiqrot sashualeba produqtebis ramenairad ertmanettan dakavshirebis (magalitat wignebis dros ertidaigive tomeulis wignebi ertat rom gamoitanos)

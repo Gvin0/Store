@@ -41,9 +41,10 @@ namespace Store.Test {
             };
             StoreDbContext storeDbContext = new StoreDbContext();
 
-            BaseRepository<Product> p = new BaseRepository<Product>(storeDbContext);
-            p.Save(product);
+            BaseRepository<Category> c = new BaseRepository<Category>(storeDbContext);
 
+            c.Save(category);
+            p.Commit();
             Console.ReadKey();
         }
     }
