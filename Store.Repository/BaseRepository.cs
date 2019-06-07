@@ -7,7 +7,7 @@ using System.Data.Entity;
 using Store.Domain.Interfaces;
 
 namespace Store.Repository {
-    public class BaseRepository<T> where T : class {
+    public abstract class BaseRepository<T> where T : class {
 
         internal StoreDbContext _context;
 

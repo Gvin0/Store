@@ -16,6 +16,6 @@ namespace Store.Domain.Domains {
         [Required]
         public byte[] Password { get; set; }//ToDo: davaHashirot paroli
 
-        public virtual ICollection<Wishlist> Wishlists { get; set; }
+        public virtual ICollection<ProductList> Wishlists { get; set; }
     }
 }

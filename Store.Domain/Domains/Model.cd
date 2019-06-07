@@ -41,7 +41,7 @@
   <Class Name="Store.Domain.Domains.Product">
     <Position X="4" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAggAAAAAAAAAQAACAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQAggAgAAAAAAAQAACAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Domains\Product.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -60,35 +60,35 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Store.Domain.Domains.AdminUser">
-    <Position X="15.25" Y="6.5" Width="1.5" />
+    <Position X="15.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\AdminUser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Store.Domain.Domains.CustomerUser">
-    <Position X="13" Y="6.5" Width="1.5" />
+    <Position X="12.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\CustomerUser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Store.Domain.Domains.ExternalUser">
-    <Position X="13.5" Y="4.5" Width="1.5" />
+    <Position X="13.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\ExternalUser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Store.Domain.Domains.InternalUser">
-    <Position X="16.25" Y="4.5" Width="1.5" />
+    <Position X="16.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\InternalUser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Store.Domain.Domains.OperatorUser">
-    <Position X="17.5" Y="6.5" Width="1.5" />
+    <Position X="17.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\OperatorUser.cs</FileName>
@@ -97,9 +97,54 @@
   <Class Name="Store.Domain.Domains.User">
     <Position X="14.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>ACAAAAAAAAAAgAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Domains\User.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Domain.Domains.Cart">
+    <Position X="11.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Domains\ProductList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Products" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Store.Domain.Domains.ProductList">
+    <Position X="12.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domains\ProductList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Store.Domain.Domains.WishList">
+    <Position X="14.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Domains\ProductList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Domain.Domains.CartProduct">
+    <Position X="8.75" Y="11" Width="1.5" />
+    <AssociationLine Name="Product" Type="Store.Domain.Domains.Product" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="11.359" />
+        <Point X="6.438" Y="11.359" />
+        <Point X="6.438" Y="5.438" />
+        <Point X="5.5" Y="5.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Domains\CartProduct.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

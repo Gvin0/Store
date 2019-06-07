@@ -9,7 +9,7 @@ using Store.Domain.Interfaces;
 namespace Store.Repository {
     public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
     {
-        internal CategoryRepository(IStoreDbContext context) : base(context) {
+        public CategoryRepository(IStoreDbContext context) : base(context) {
 
         }
     }

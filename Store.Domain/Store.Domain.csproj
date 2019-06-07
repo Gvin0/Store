@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domains\AdminUser.cs" />
+    <Compile Include="Domains\CartProduct.cs" />
     <Compile Include="Domains\CustomerUser.cs" />
     <Compile Include="Domains\ExternalUser.cs" />
     <Compile Include="Domains\InternalUser.cs" />
@@ -82,7 +83,7 @@
     <Compile Include="Domains\Product.cs" />
     <Compile Include="Domains\Category.cs" />
     <Compile Include="Domains\User.cs" />
-    <Compile Include="Domains\Wishlist.cs" />
+    <Compile Include="Domains\ProductList.cs" />
     <Compile Include="Interfaces\ICategoryRepository.cs" />
     <Compile Include="Interfaces\IProductTemplateRepository.cs" />
     <Compile Include="Interfaces\IProductRepository.cs" />
