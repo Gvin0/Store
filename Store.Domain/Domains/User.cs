@@ -17,5 +17,7 @@ namespace Store.Domain.Domains {
         public byte[] Password { get; set; }//ToDo: davaHashirot paroli
 
         public virtual ICollection<ProductList> Wishlists { get; set; }
+
+        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

@@ -44,7 +44,7 @@ namespace Store.Test {
 			CategoryRepository c = new CategoryRepository(storeDbContext);
 
 			c.Save(category);
-			//p.Commit();
+			//c.Commit();
 			Console.ReadKey();
 		}
 	}

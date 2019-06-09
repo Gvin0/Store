@@ -41,12 +41,15 @@
   <Class Name="Store.Domain.Domains.Product">
     <Position X="4" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAggAgAAAAAAAQAACAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>RAAAAAAAAQAggAgAAAAAAAQAACAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Domains\Product.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ProductTemplate" />
     </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Order_Details" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Store.Domain.Domains.PropertyValue">
     <Position X="7.75" Y="4.25" Width="1.5" />
@@ -96,10 +99,21 @@
   </Class>
   <Class Name="Store.Domain.Domains.User">
     <Position X="14.5" Y="2.25" Width="1.5" />
+    <AssociationLine Name="Orders" Type="Store.Domain.Domains.Orders" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="3.188" />
+        <Point X="12.045" Y="3.188" />
+        <Point X="12.045" Y="9.274" />
+        <Point X="10.25" Y="9.274" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>ACAAAAAAAAAAgAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>ACEAAAAAAAAAgAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Domains\User.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Orders" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Store.Domain.Domains.Cart">
     <Position X="11.5" Y="11" Width="1.5" />
@@ -123,10 +137,22 @@
   </Class>
   <Class Name="Store.Domain.Domains.WishList">
     <Position X="14.25" Y="11" Width="1.5" />
+    <AssociationLine Name="Products" Type="Store.Domain.Domains.Product" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.625" Y="12.233" />
+        <Point X="14.625" Y="13.049" />
+        <Point X="3.319" Y="13.049" />
+        <Point X="3.319" Y="6.231" />
+        <Point X="4" Y="6.231" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Domains\ProductList.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Products" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Store.Domain.Domains.CartProduct">
     <Position X="8.75" Y="11" Width="1.5" />
@@ -134,8 +160,8 @@
       <Path>
         <Point X="8.75" Y="11.359" />
         <Point X="6.438" Y="11.359" />
-        <Point X="6.438" Y="5.438" />
-        <Point X="5.5" Y="5.438" />
+        <Point X="6.438" Y="5.549" />
+        <Point X="5.5" Y="5.549" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -145,6 +171,43 @@
     <ShowAsAssociation>
       <Property Name="Product" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="Store.Domain.Domains.Orders">
+    <Position X="8.75" Y="8.25" Width="1.5" />
+    <AssociationLine Name="Order_Details" Type="Store.Domain.Domains.Order_Details" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="9.125" />
+        <Point X="7.247" Y="9.125" />
+        <Point X="7.247" Y="10.719" />
+        <Point X="6.521" Y="10.719" Type="JumpStart" />
+        <Point X="6.355" Y="10.719" Type="JumpEnd" />
+        <Point X="5.75" Y="10.719" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>SAABAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domains\Orders.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Order_Details" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Store.Domain.Domains.Order_Details">
+    <Position X="4.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAQAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Domains\Order Details.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Store.Domain.Domains.RelatedProducts">
+    <Position X="0.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Domains\RelatedProducts.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Products" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

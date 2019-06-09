@@ -25,5 +25,9 @@ namespace Store.Domain.Domains {
         public virtual ProductTemplate ProductTemplate { get; set; }
 
         public virtual ICollection<ProductList> WishLists { get; set; }
+
+        public virtual ICollection<Order_Details> Order_Details { get; set; }
+
+        public virtual ICollection<RelatedProducts> RelatedProducts { get; set; }
     }
 }
