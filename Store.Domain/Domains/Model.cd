@@ -158,14 +158,14 @@
     <Position X="8.75" Y="11" Width="1.5" />
     <AssociationLine Name="Product" Type="Store.Domain.Domains.Product" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="8.75" Y="11.359" />
-        <Point X="6.438" Y="11.359" />
+        <Point X="8.75" Y="11.452" />
+        <Point X="6.438" Y="11.452" />
         <Point X="6.438" Y="5.549" />
         <Point X="5.5" Y="5.549" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAACAEAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>EAACgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAACAA=</HashCode>
       <FileName>Domains\CartProduct.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -202,7 +202,7 @@
   <Class Name="Store.Domain.Domains.RelatedProducts">
     <Position X="0.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Domains\RelatedProducts.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
