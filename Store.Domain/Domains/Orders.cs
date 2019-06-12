@@ -14,7 +14,7 @@ namespace Store.Domain.Domains {
         [Column(TypeName = "datetime"), Required]
         public DateTime OrderDate { get; set; }
 
-        public virtual ICollection<Order_Details> Order_Details { get; set; }
+        public virtual ICollection<OrderDetails> OrderDetails { get; set; }
 
         public virtual User User { get; set; }
 

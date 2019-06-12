@@ -26,7 +26,7 @@ namespace Store.Repository {
         public virtual DbSet<InternalUser> InternalUsersUsers { get; set; }
         public virtual DbSet<OperatorUser> OperatorUsersUsers { get; set; }
         public virtual DbSet<AdminUser> AdminUsersUsers { get; set; }
-        public virtual DbSet<Order_Details> Order_Details { get; set; }
+        public virtual DbSet<OrderDetails> Order_Details { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<WishList> WishLists { get; set; }
         public virtual DbSet<Cart> Carts { get; set; }

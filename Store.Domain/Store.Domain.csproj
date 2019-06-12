@@ -71,12 +71,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domains\AdminUser.cs" />
+    <Compile Include="Domains\Cart.cs" />
     <Compile Include="Domains\CartProduct.cs" />
     <Compile Include="Domains\CustomerUser.cs" />
     <Compile Include="Domains\ExternalUser.cs" />
     <Compile Include="Domains\InternalUser.cs" />
     <Compile Include="Domains\OperatorUser.cs" />
-    <Compile Include="Domains\Order Details.cs" />
+    <Compile Include="Domains\OrderDetails.cs" />
     <Compile Include="Domains\Orders.cs" />
     <Compile Include="Domains\ProductTemplate.cs" />
     <Compile Include="Domains\Property.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Domains\Category.cs" />
     <Compile Include="Domains\User.cs" />
     <Compile Include="Domains\ProductList.cs" />
+    <Compile Include="Domains\WiishList.cs" />
     <Compile Include="Interfaces\IAdminUserRepository.cs" />
     <Compile Include="Interfaces\ICartProductRepository.cs" />
     <Compile Include="Interfaces\ICartRepository.cs" />

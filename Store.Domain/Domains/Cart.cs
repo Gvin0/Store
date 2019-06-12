@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Store.Domain.Domains
 {
-    [Table("OperatorUsers")]
-    public class OperatorUser : InternalUser
+    [Table("Carts")]
+    public class Cart : ProductList
     {
-
+        public virtual ICollection<CartProduct> Products { get; set; }
     }
 }

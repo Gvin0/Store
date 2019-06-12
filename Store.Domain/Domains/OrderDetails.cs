@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Domain.Domains {
-    public class Order_Details {
+    public class OrderDetails {
         [Key]
         public int ID { get; set; }
 

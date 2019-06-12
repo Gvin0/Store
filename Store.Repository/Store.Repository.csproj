@@ -78,7 +78,7 @@
     <Compile Include="ExternalUserRepository.cs" />
     <Compile Include="InternalUserRepository.cs" />
     <Compile Include="OperatorUserRepository.cs" />
-    <Compile Include="Order DetailsRepository.cs" />
+    <Compile Include="OrderDetailsRepository.cs" />
     <Compile Include="OrdersRepository.cs" />
     <Compile Include="ProductListRepository.cs" />
     <Compile Include="UserRepository.cs" />
