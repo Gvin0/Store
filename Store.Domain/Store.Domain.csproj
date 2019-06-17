@@ -90,6 +90,7 @@
     <Compile Include="Domains\ProductList.cs" />
     <Compile Include="Domains\WiishList.cs" />
     <Compile Include="Interfaces\IAdminUserRepository.cs" />
+    <Compile Include="Interfaces\IBaseRepository.cs" />
     <Compile Include="Interfaces\ICartProductRepository.cs" />
     <Compile Include="Interfaces\ICartRepository.cs" />
     <Compile Include="Interfaces\ICategoryRepository.cs" />
