@@ -21,9 +21,6 @@ namespace Store.Repository {
         public virtual DbSet<ProductTemplate> ProductTemplates { get; set; }
         public virtual DbSet<PropertyValue> PropertyValues { get; set; }
         public virtual DbSet<Property> Properties { get; set; }
-        public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<ExternalUser> ExternalUsersUsers { get; set; }
-        public virtual DbSet<InternalUser> InternalUsersUsers { get; set; }
         public virtual DbSet<OperatorUser> OperatorUsersUsers { get; set; }
         public virtual DbSet<AdminUser> AdminUsersUsers { get; set; }
         public virtual DbSet<OrderDetails> Order_Details { get; set; }
@@ -31,7 +28,6 @@ namespace Store.Repository {
         public virtual DbSet<WishList> WishLists { get; set; }
         public virtual DbSet<Cart> Carts { get; set; }
         public virtual DbSet<CartProduct> CartProducts { get; set; }
-        public virtual DbSet<ProductList> ProductLists { get; set; }
         public virtual DbSet<RelatedProducts> RelatedProducts { get; set; }
 
 

@@ -5,6 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Domain.Interfaces {
-    public interface IOrder_DetailsRepository {
+    public interface IOrderDetailsRepository {
     }
 }

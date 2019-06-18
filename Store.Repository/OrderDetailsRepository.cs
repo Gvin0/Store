@@ -7,7 +7,7 @@ using Store.Domain.Interfaces;
 using Store.Domain.Domains;
 
 namespace Store.Repository {
-    public class OrderDetailsRepository : BaseRepository<OrderDetails>, IOrder_DetailsRepository {
+    public class OrderDetailsRepository : BaseRepository<OrderDetails>, IOrderDetailsRepository {
         internal OrderDetailsRepository(IStoreDbContext context) : base(context) {
 
         }
