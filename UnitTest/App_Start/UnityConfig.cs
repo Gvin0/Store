@@ -54,18 +54,6 @@ namespace UnitTest {
             ).ToArray();
 
             container.RegisterType<IStoreDbContext, StoreDbContext>(new PerRequestLifetimeManager());
-            container.RegisterType<IProductRepository, ProductRepository>(new PerRequestLifetimeManager());
-            container.RegisterType<ITemplatePropertyRepository, TemplatePropertyRepository>(new PerRequestLifetimeManager());
-            container.RegisterType<IRelatedProductsRepository, RelatedProductsRepository>(new PerRequestLifetimeManager());
-            container.RegisterType<IProductTemplateRepository, ProductTemplateRepository>(new PerRequestLifetimeManager());
-            container.RegisterType<ICategoryRepository, CategoryRepository>(new PerRequestLifetimeManager());
-            container.RegisterType<ICartProductRepository, CartProductRepository>(new PerRequestLifetimeManager());
-            container.RegisterType<ICartRepository, CartRepository>(new PerRequestLifetimeManager());
-            container.RegisterType<IPropertyRepository, PropertyRepository>(new PerRequestLifetimeManager());
-            container.RegisterType<IOperatorUserRepository, OperatorUserRepository>(new PerRequestLifetimeManager());
-            container.RegisterType<IOrderDetailsRepository, OrderDetailsRepository> (new PerRequestLifetimeManager());
-            container.RegisterType<IOrdersRepository, OrdersRepository>(new PerRequestLifetimeManager());
-            container.RegisterType<IWishlistRepository, WishlistRepository>(new PerRequestLifetimeManager());
 
 
         }

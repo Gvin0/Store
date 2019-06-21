@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -10,5 +11,17 @@ namespace Store.Domain.Domains
     [Table("CustomerUsers")]
     public class CustomerUser : ExternalUser
     {
+        [Key]
+        public int ID { get; set; }
+
+        [Required, MaxLength(20)]
+        public string Username { get; set; }
+
+        //[Required]
+        public byte[] Password { get; set; }//ToDo: davaHashirot paroli
+
+        public virtual ICollection<ProductList> Wishlists { get; set; }
+
+        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

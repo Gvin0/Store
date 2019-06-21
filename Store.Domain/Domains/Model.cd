@@ -60,35 +60,35 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Store.Domain.Domains.AdminUser">
-    <Position X="15.25" Y="6.75" Width="1.5" />
+    <Position X="15.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\AdminUser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Store.Domain.Domains.CustomerUser">
-    <Position X="12.75" Y="6.75" Width="1.5" />
+    <Position X="12.75" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ACEAAAAAAAAAgAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Domains\CustomerUser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Store.Domain.Domains.ExternalUser">
-    <Position X="13.25" Y="4.75" Width="1.5" />
+    <Position X="13.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\ExternalUser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Store.Domain.Domains.InternalUser">
-    <Position X="16.25" Y="4.75" Width="1.5" />
+    <Position X="16.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\InternalUser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Store.Domain.Domains.OperatorUser">
-    <Position X="17.5" Y="6.75" Width="1.5" />
+    <Position X="17.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\OperatorUser.cs</FileName>
@@ -96,21 +96,10 @@
   </Class>
   <Class Name="Store.Domain.Domains.User">
     <Position X="14.5" Y="2.25" Width="1.5" />
-    <AssociationLine Name="Orders" Type="Store.Domain.Domains.Orders" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="14.5" Y="3.188" />
-        <Point X="12.045" Y="3.188" />
-        <Point X="12.045" Y="9.406" />
-        <Point X="10.25" Y="9.406" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>ACEAAAAAAAAAgAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\User.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Orders" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Store.Domain.Domains.Cart">
     <Position X="11.5" Y="11" Width="1.5" />
@@ -126,11 +115,11 @@
   <Class Name="Store.Domain.Domains.ProductList">
     <Position X="12.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\ProductList.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="User" />
+      <Property Name="CustomerUser" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Store.Domain.Domains.CartProduct">
@@ -154,7 +143,7 @@
   <Class Name="Store.Domain.Domains.Orders">
     <Position X="8.75" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAABAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CAAAAAAAAAAAgAAAABAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domains\Orders.cs</FileName>
     </TypeIdentifier>
   </Class>

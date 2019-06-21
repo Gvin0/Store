@@ -9,17 +9,6 @@ using System.Threading.Tasks;
 namespace Store.Domain.Domains {
     [Table("Users")]
     public abstract class User {
-        [Key]
-        public int ID { get; set; }
 
-        [Required, MaxLength(20)]
-        public string Username { get; set; }
-
-        [Required]
-        public byte[] Password { get; set; }//ToDo: davaHashirot paroli
-
-        public virtual ICollection<ProductList> Wishlists { get; set; }
-
-        public virtual ICollection<Orders> Orders { get; set; }
     }
 }

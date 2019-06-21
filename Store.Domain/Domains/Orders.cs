@@ -16,7 +16,7 @@ namespace Store.Domain.Domains {
 
         public virtual ICollection<OrderDetails> OrderDetails { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual CustomerUser CustomerUser { get; set; }
 
     }
 }

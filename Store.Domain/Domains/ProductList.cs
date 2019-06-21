@@ -12,6 +12,6 @@ namespace Store.Domain.Domains {
         [Key]
         public int ID { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual CustomerUser CustomerUser { get; set; }
     }
 }
