@@ -21,14 +21,14 @@ namespace Test {
         [TestMethod]
         public void CategoryRepositoryTest() {
             Category category = new Category() {
-                Name = "Computer Tech.",
+                Name = "Test3.",
                 Description = "TestDescription"
         };
             StoreDbContext sdc = new StoreDbContext();
             CategoryRepository c = new CategoryRepository(sdc);
             c.Save(category);
-            c.Commit();
-            Assert.AreEqual(1, category.ID,"Such category doesn't exist");
+            sdc.CommitChanges(sdc);
+            Assert.AreEqual(7, category.ID,"Such category doesn't exist");
         }
     }
 }

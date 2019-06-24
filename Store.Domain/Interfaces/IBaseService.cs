@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 
 namespace Store.Domain.Interfaces {
-   public interface IBaseRepository<T> where T : class {
+    public interface IBaseService<T> where T : class {
         T Fetch(int id);
         IEnumerable<T> Set();
         void Save(T entity);

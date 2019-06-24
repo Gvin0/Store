@@ -75,6 +75,7 @@
     <Compile Include="CartProductRepository.cs" />
     <Compile Include="CartRepository.cs" />
     <Compile Include="CategoryRepository.cs" />
+    <Compile Include="CustomerUserRepository.cs" />
     <Compile Include="OperatorUserRepository.cs" />
     <Compile Include="OrderDetailsRepository.cs" />
     <Compile Include="OrdersRepository.cs" />

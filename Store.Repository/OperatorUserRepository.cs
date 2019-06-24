@@ -8,7 +8,7 @@ using Store.Domain.Domains;
 
 namespace Store.Repository {
     public class OperatorUserRepository : BaseRepository<OperatorUser>, IOperatorUserRepository {
-        internal OperatorUserRepository(IStoreDbContext context) : base(context) {
+        public OperatorUserRepository(IStoreDbContext context) : base(context) {
 
         }
     }

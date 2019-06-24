@@ -7,8 +7,8 @@ using Store.Domain.Domains;
 using Store.Domain.Interfaces;
 
 namespace Store.Repository {
-   public class CartRepository : BaseRepository<Cart>, ICartRepository {
-        public CartRepository(IStoreDbContext context) : base(context) {
+    public class CustomerUserRepository : BaseRepository<CustomerUser>, ICustomerUserRepository {
+        public CustomerUserRepository(IStoreDbContext context) : base(context) {
 
         }
     }

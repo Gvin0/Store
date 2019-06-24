@@ -8,7 +8,7 @@ using Store.Domain.Domains;
 
 namespace Store.Repository {
     public class CartProductRepository : BaseRepository<CartProduct>, ICartProductRepository {
-        internal CartProductRepository(IStoreDbContext context) : base(context) {
+        public CartProductRepository(IStoreDbContext context) : base(context) {
 
         }
     }

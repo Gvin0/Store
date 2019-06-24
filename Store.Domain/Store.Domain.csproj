@@ -88,12 +88,14 @@
     <Compile Include="Domains\Category.cs" />
     <Compile Include="Domains\User.cs" />
     <Compile Include="Domains\ProductList.cs" />
-    <Compile Include="Domains\WiishList.cs" />
+    <Compile Include="Domains\WishList.cs" />
     <Compile Include="Interfaces\IAdminUserRepository.cs" />
     <Compile Include="Interfaces\IBaseRepository.cs" />
+    <Compile Include="Interfaces\IBaseService.cs" />
     <Compile Include="Interfaces\ICartProductRepository.cs" />
     <Compile Include="Interfaces\ICartRepository.cs" />
     <Compile Include="Interfaces\ICategoryRepository.cs" />
+    <Compile Include="Interfaces\ICustomerUserRepository.cs" />
     <Compile Include="Interfaces\IExternalUserRepository.cs" />
     <Compile Include="Interfaces\IInternalUserRepository.cs" />
     <Compile Include="Interfaces\IOperatorUserRepository.cs" />

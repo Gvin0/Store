@@ -30,6 +30,9 @@ namespace Store.Repository {
         public virtual DbSet<CartProduct> CartProducts { get; set; }
         public virtual DbSet<RelatedProducts> RelatedProducts { get; set; }
 
+        public void CommitChanges(IStoreDbContext context) {
+            context.SaveChanges();
+        }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder) {
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();

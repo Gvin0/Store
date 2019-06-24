@@ -8,7 +8,7 @@ using Store.Domain.Interfaces;
 
 namespace Store.Repository {
     public class TemplatePropertyRepository : BaseRepository<TemplateProperty>, ITemplatePropertyRepository {
-        internal TemplatePropertyRepository(IStoreDbContext context) : base(context) {
+        public TemplatePropertyRepository(IStoreDbContext context) : base(context) {
 
         }
     }

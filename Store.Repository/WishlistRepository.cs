@@ -8,7 +8,7 @@ using Store.Domain.Domains;
 
 namespace Store.Repository {
     public class WishlistRepository : BaseRepository<WishList>, IWishlistRepository {
-        internal WishlistRepository(IStoreDbContext context) : base(context) {
+        public WishlistRepository(IStoreDbContext context) : base(context) {
 
         }
     }

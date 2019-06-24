@@ -18,7 +18,7 @@ namespace Store.Domain.Domains {
         public string Description { get; set; }
 
         [ForeignKey("Parent")]
-        public int ParentId { get; set; }
+        public int? ParentId { get; set; }
 
         public virtual Category Parent { get; set; }
 

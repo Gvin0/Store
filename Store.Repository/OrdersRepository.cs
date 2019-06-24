@@ -8,7 +8,7 @@ using Store.Domain.Domains;
 
 namespace Store.Repository {
     public class OrdersRepository : BaseRepository<Orders>, IOrdersRepository {
-        internal OrdersRepository(IStoreDbContext context) : base(context) {
+        public OrdersRepository(IStoreDbContext context) : base(context) {
 
         }
     }

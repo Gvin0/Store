@@ -12,7 +12,7 @@ namespace TestConsoleApp {
             List<Category> list = new List<Category>();
 
             Category category = new Category() {
-                Name = "Computer Tech."
+                Name = "Test5"
             };
             list.Add(category);
             ProductTemplate productTemplate = new ProductTemplate() {
@@ -27,7 +27,6 @@ namespace TestConsoleApp {
                 ProductTemplate = productTemplate,
                 Property = property
             };
-
             Product product = new Product() {
                 Name = "G05_PC",
                 Price = 1600.99m,
@@ -67,9 +66,18 @@ namespace TestConsoleApp {
             StoreDbContext storeDbContext = new StoreDbContext();
 
             CategoryRepository c = new CategoryRepository(storeDbContext);
+            //ProductTemplateRepository pT = new ProductTemplateRepository(storeDbContext);
+            //ProductRepository p = new ProductRepository(storeDbContext);
 
             c.Save(category);
-            c.Commit();
+            //pT.Save(productTemplate);
+            //p.Save(product);
+
+            //c.Commit();
+            storeDbContext.CommitChanges(storeDbContext);
+
+
+            Console.WriteLine("Success");
             Console.ReadKey();
         }
     }
