@@ -48,6 +48,5 @@ namespace Store.Repository {
         public virtual void Commit() {
             _context.SaveChanges();
         }
-
     }
 }

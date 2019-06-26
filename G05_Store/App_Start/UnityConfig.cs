@@ -6,6 +6,7 @@ using Store.Repository;
 using Store.Domain.Interfaces;
 using Store.Domain.Domains;
 using System.Linq;
+using Store.Services;
 
 namespace G05_Store
 {
@@ -48,19 +49,29 @@ namespace G05_Store
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
 
-            // aq gadasaxedia servicebis dainjectebis dros resolves ar gaaketes 
-            // gasatvaliswinebelia yvela assemblydan rom wamoigos!!!!!
-
-            var interfaces = typeof(Product).Assembly.GetTypes()
+            // Resolve Repositories
+            var repositoryInterfaces = typeof(Product).Assembly.GetTypes()
                 .Where(t => t.IsInterface && t != typeof(IStoreDbContext));
 
             (
                 from t in typeof(ProductRepository).Assembly.GetTypes()
-                from i in interfaces
+                from i in repositoryInterfaces
                 where i.IsAssignableFrom(t)
                 select container.RegisterType(i, t)
             ).ToArray();
 
+            // Resolve Services
+            var serviceInterfaces = typeof(Product).Assembly.GetTypes()
+               .Where(t => t.IsInterface && t != typeof(IStoreDbContext));
+
+            (
+                from t in typeof(ProductService).Assembly.GetTypes()
+                from i in serviceInterfaces
+                where i.IsAssignableFrom(t)
+                select container.RegisterType(i, t)
+            ).ToArray();
+
+            // Resolve Context
             container.RegisterType<IStoreDbContext, StoreDbContext>(new PerRequestLifetimeManager());
         }
     }

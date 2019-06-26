@@ -90,6 +90,7 @@
     <Compile Include="Domains\ProductList.cs" />
     <Compile Include="Domains\WishList.cs" />
     <Compile Include="Interfaces\IAdminUserRepository.cs" />
+    <Compile Include="Interfaces\IAdminUserService.cs" />
     <Compile Include="Interfaces\IBaseRepository.cs" />
     <Compile Include="Interfaces\IBaseService.cs" />
     <Compile Include="Interfaces\ICartProductRepository.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Interfaces\IOrderDetailsRepository.cs" />
     <Compile Include="Interfaces\IOrdersRepository.cs" />
     <Compile Include="Interfaces\IProductListRepository.cs" />
+    <Compile Include="Interfaces\IProductService.cs" />
     <Compile Include="Interfaces\IProductTemplateRepository.cs" />
     <Compile Include="Interfaces\IProductRepository.cs" />
     <Compile Include="Interfaces\IPropertyValueRepository.cs" />
