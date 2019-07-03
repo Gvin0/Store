@@ -10,10 +10,10 @@ namespace Store.Services
 {
     public class ProductService : BaseService<Product, IProductRepository>, IProductService
     {
-        private IProductRepository _productRepository;
+        
         public ProductService(IProductRepository productRepository) : base (productRepository)
         {
-            _productRepository = productRepository ?? throw new ArgumentNullException("Product Injection Failed");
+            
         }
     }
 }
