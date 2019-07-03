@@ -44,5 +44,20 @@ namespace Store.Services
         {
             _repo.Commit();
         }
+
+        //public void Delete(TEntity entity)
+        //{
+        //    _repo.Delete(entity);
+        //}
+      
+        //public void Save(DbSet<TEntity> set, TEntity entity)
+        //{
+        //    _repo.Save(set, entity);
+        //}
+
+        //public void Delete(DbSet<TEntity> set, TEntity entity)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
