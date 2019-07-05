@@ -6,6 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Domain.Interfaces {
-   public interface ICartRepository : IBaseRepository<Cart> {
-    }
+  public interface IOrderDetailsService : IBaseService<OrderDetails> {
+  }
 }

@@ -6,6 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Domain.Interfaces {
-    public interface IOperatorUserRepository : IBaseRepository<OperatorUser> {
-    }
+  public interface IRelatedProductsService : IBaseService<RelatedProducts> {
+  }
 }

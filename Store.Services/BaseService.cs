@@ -8,56 +8,38 @@ using Store.Domain.Domains;
 using Store.Domain.Interfaces;
 using Store.Repository;
 
-namespace Store.Services
-{
-    public abstract class BaseService<TEntity, TRepo> : IBaseService<TEntity>  
-                                                       where TEntity : class 
-                                                       where TRepo : IBaseRepository<TEntity>
-    {
-        private TRepo _repo;
-        //private IStoreDbContext _context;
-        public BaseService(/*IStoreDbContext context, */TRepo repo)
-        {
-            _repo = repo;
-            //_context  = context as StoreDbContext;
-        }    
-        public TEntity Fetch(int id)
-        {
-            return _repo.Fetch(id);
-        }
+namespace Store.Services {
+  public abstract class BaseService<TEntity, TRepository> : IBaseService<TEntity>
+       where TEntity : class
+       where TRepository : IBaseRepository<TEntity> {
 
-        public IEnumerable<TEntity> Set()
-        {
-            return _repo.Set();
-        }
+    protected TRepository _repository;
 
-        public void Save(TEntity entity)
-        {
-            _repo.Save(entity);
-        }
-
-        public void Delete(int id)
-        {
-            _repo.Delete(id);
-        }
-        public void Commit()
-        {
-            _repo.Commit();
-        }
-
-        //public void Delete(TEntity entity)
-        //{
-        //    _repo.Delete(entity);
-        //}
-      
-        //public void Save(DbSet<TEntity> set, TEntity entity)
-        //{
-        //    _repo.Save(set, entity);
-        //}
-
-        //public void Delete(DbSet<TEntity> set, TEntity entity)
-        //{
-        //    throw new NotImplementedException();
-        //}
+    public BaseService(TRepository repository) {
+      if(repository == null) {
+        throw new ArgumentNullException("Repository is null.");
+      }
+      _repository = repository;
     }
+
+    public TEntity Fetch(int id) {
+      return _repository.Fetch(id);
+    }
+
+    public IEnumerable<TEntity> Set() {
+      return _repository.Set();
+    }
+
+    public void Save(TEntity entity) {
+      _repository.Save(entity);
+    }
+
+    public void Delete(int id) {
+      _repository.Delete(id);
+    }
+
+    public void Commit() {
+      _repository.Commit();
+    }
+  }
 }

@@ -12,8 +12,6 @@ namespace Store.Domain.Interfaces {
         void Save(T entity);
         void Delete(int id);
         void Delete(T entity);
-        void Save(DbSet<T> set, T entity);
-        void Delete(DbSet<T> set, T entity);
         void Commit();
     }
 }

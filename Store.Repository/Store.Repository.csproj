@@ -70,13 +70,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminUserRepository.cs" />
     <Compile Include="BaseRepository.cs" />
     <Compile Include="CartProductRepository.cs" />
-    <Compile Include="CartRepository.cs" />
     <Compile Include="CategoryRepository.cs" />
-    <Compile Include="CustomerUserRepository.cs" />
-    <Compile Include="OperatorUserRepository.cs" />
     <Compile Include="OrderDetailsRepository.cs" />
     <Compile Include="OrdersRepository.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -88,7 +84,7 @@
     <Compile Include="RelatedProductsRepository.cs" />
     <Compile Include="StoreDbContext.cs" />
     <Compile Include="TemplatePropertyRepository.cs" />
-    <Compile Include="WishlistRepository.cs" />
+    <Compile Include="UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -5,10 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Store.Domain.Interfaces
-{
-    public interface IAdminUserService : IBaseService<AdminUser>
-    {
-
-    }
+namespace Store.Domain.Interfaces {
+  public interface IUserService : IBaseService<User> {
+  }
 }

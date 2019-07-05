@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Store.Domain.Domains;
 using Store.Domain.Interfaces;
+using Store.Domain.Domains;
 
 namespace Store.Repository {
-   public class CartRepository : BaseRepository<Cart>, ICartRepository {
-        public CartRepository(IStoreDbContext context) : base(context) {
+  public class UserRepository : BaseRepository<User>, IUserRepository {
+    internal UserRepository(IStoreDbContext context) : base(context) {
 
-        }
     }
+  }
 }

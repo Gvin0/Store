@@ -6,6 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Domain.Interfaces {
-    public interface IInternalUserRepository : IBaseRepository<InternalUser> {
-    }
+  public interface ITemplatePropertyService : IBaseService<TemplateProperty> {
+  }
 }

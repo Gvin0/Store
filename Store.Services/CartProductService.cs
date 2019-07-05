@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Services {
-	public class ProductService : BaseService<Product, IProductRepository>, IProductService {
-		public ProductService(IProductRepository repository) : base(repository) {
-		
-		}
-	}
+  public class CartProductService : BaseService<CartProduct, ICartProductRepository>, ICartProductService {
+    public CartProductService(ICartProductRepository repository) : base(repository) {
+
+    }
+  }
 }
