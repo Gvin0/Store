@@ -10,6 +10,6 @@ namespace Store.Domain.Domains
     [Table("Carts")]
     public class Cart : ProductList
     {
-        public virtual ICollection<CartProduct> Products { get; set; }
+        public virtual ICollection<CartProduct> CartProducts { get; set; }
     }
 }

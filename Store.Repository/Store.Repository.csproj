@@ -83,6 +83,7 @@
     <Compile Include="PropertyValueRepository.cs" />
     <Compile Include="RelatedProductsRepository.cs" />
     <Compile Include="StoreDbContext.cs" />
+    <Compile Include="StoreDbTransaction.cs" />
     <Compile Include="TemplatePropertyRepository.cs" />
     <Compile Include="UserRepository.cs" />
   </ItemGroup>

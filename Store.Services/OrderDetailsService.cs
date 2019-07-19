@@ -7,9 +7,9 @@ using Store.Domain.Domains;
 using Store.Domain.Interfaces;
 
 namespace Store.Services {
-  public class OrderDetailsService : BaseService<OrderDetails, IOrderDetailsRepository>, IOrderDetailsService {
-    public OrderDetailsService(IOrderDetailsRepository repository) : base(repository) {
+   public class OrderDetailsService : BaseService<OrderDetails, IOrderDetailsRepository>, IOrderDetailsService {
+      public OrderDetailsService(IOrderDetailsRepository repository) : base(repository) {
 
-    }
-  }
+      }
+   }
 }

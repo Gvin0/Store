@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Domain.Interfaces {
-   public interface IStoreDbContext {
-      int SaveChanges();
-      IStoreDbTransaction BeginTransaction();
+   public interface IStoreDbTransaction {
+      void Commit();
+      void Rollback();
    }
 }

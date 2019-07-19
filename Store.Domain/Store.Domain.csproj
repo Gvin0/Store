@@ -111,6 +111,7 @@
     <Compile Include="Interfaces\IRelatedProductsService.cs" />
     <Compile Include="Interfaces\IStoreDbContext.cs" />
     <Compile Include="Interfaces\IPropertyRepository.cs" />
+    <Compile Include="Interfaces\IStoreDbTransaction.cs" />
     <Compile Include="Interfaces\ITemplatePropertyRepository.cs" />
     <Compile Include="Interfaces\ITemplatePropertyService.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />

@@ -1,3 +1,41 @@
+User Roles
+
+1. Administrator
+
+momxmareblebis damateba da martva.
+
+momxmareblebis uplebebis martva (unda chamovyalibdet ra uplebebi gvchirdeba, chamovwerot chveni varaudebi).
+
+producqiis, kategoriebis da shablonebis sheqmna.
+
+(davamatot tu rame gvaklia)
+
+2. Operator
+
+produqciis damateba (Related Products)
+
+Sale-bis dadeba
+
+Customer support
+
+Resupply 
+
+chamovwerot savaraudo operaciebi
+
+3. Customer
+
+Account management
+
+orderis gaketebis motxovna
+
+orderis gauqmebis motxovna
+
+Refund-is motxovna
+
+Communication with operator
+
+chamovwerot savaraudo operaciebi
+-----------------------------------------
 daageneriret baza da sheqmenit shemdeg tempatebi
 1. computer
 	brandis saxeli
