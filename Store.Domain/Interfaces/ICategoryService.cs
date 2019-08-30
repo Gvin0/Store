@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Store.Domain.Domains;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Domain.Interfaces {
-   public interface IStoreDbContext {
-      int SaveChanges();
-      IStoreDbTransaction BeginTransaction();
-   }
+  public interface ICategoryService : IBaseService<Category> {
+
+  }
 }

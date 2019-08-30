@@ -100,6 +100,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -117,8 +119,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Store.Domain\Store.Domain.csproj">
+      <Project>{3d971aa4-b528-4c9d-9e50-03bd28d88675}</Project>
+      <Name>Store.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Repository\Store.Repository.csproj">
+      <Project>{a7bffe6e-0bdf-4dee-bf3a-2ebb7d7ad86c}</Project>
+      <Name>Store.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Services\Store.Services.csproj">
+      <Project>{2ac14f4b-8c8c-4aec-8a4f-32a467e04803}</Project>
+      <Name>Store.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

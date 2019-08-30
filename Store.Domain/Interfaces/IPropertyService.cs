@@ -6,6 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Domain.Interfaces {
-   public interface IWishlistRepository : IBaseRepository<WishList> {
-    }
+  public interface IPropertyService : IBaseService<Property> {
+  }
 }

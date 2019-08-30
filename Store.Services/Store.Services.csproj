@@ -70,10 +70,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminUserService.cs" />
     <Compile Include="BaseService.cs" />
+    <Compile Include="CartProductService.cs" />
+    <Compile Include="CategoryService.cs" />
+    <Compile Include="OrderDetailsService.cs" />
+    <Compile Include="OrdersService.cs" />
+    <Compile Include="ProductListService.cs" />
     <Compile Include="ProductService.cs" />
+    <Compile Include="ProductTemplateService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyService.cs" />
+    <Compile Include="PropertyValueService.cs" />
+    <Compile Include="RelatedProductsService.cs" />
+    <Compile Include="TemplatePropertyService.cs" />
+    <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

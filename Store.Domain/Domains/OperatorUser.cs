@@ -6,13 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Store.Domain.Domains
-{
-    [Table("OperatorUsers")]
-    public class OperatorUser : InternalUser
-    {
-        [Key]
-        public int ID { get; set; }
-
-    }
+namespace Store.Domain.Domains {
+  [Table("OperatorUsers")]
+  public class OperatorUser : InternalUser {
+  }
 }

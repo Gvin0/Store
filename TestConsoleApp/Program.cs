@@ -7,78 +7,78 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TestConsoleApp {
-    class Program {
-        static void Main(string[] args) {
-            List<Category> list = new List<Category>();
+   class Program {
+      static void Main(string[] args) {
+         List<Category> list = new List<Category>();
 
-            Category category = new Category() {
-                Name = "Test5"
-            };
-            list.Add(category);
-            ProductTemplate productTemplate = new ProductTemplate() {
-                Name = "PC",
-                Categories = list
-            };
-            Property property = new Property() {
-                Title = "Brand Name",
-                Type = 0
-            };
-            TemplateProperty templateProperty = new TemplateProperty() {
-                ProductTemplate = productTemplate,
-                Property = property
-            };
-            Product product = new Product() {
-                Name = "G05_PC",
-                Price = 1600.99m,
-                Description = "Only the best PC builds",
-                Quantity = 8,
-                ProductTemplate = productTemplate
-            };
-            PropertyValue propertyValue = new PropertyValue() {
-                TextValue = "G05",
-                Product = product,
-                TemplateProperty = templateProperty
-            };
-            CustomerUser customerUser = new CustomerUser() {
-                Username = "TestUser1"
-            };
-            WishList wishlist = new WishList() {
-                Title = "TestWishlist",
-                CustomerUser = customerUser
-            };
-            Orders orders = new Orders() {
-                OrderDate = DateTime.Now,
-                CustomerUser = customerUser
+         Category category = new Category() {
+            Name = "Test5"
+         };
+         list.Add(category);
+         ProductTemplate productTemplate = new ProductTemplate() {
+            Name = "PC",
+            Categories = list
+         };
+         Property property = new Property() {
+            Title = "Brand Name",
+            Type = 0
+         };
+         TemplateProperty templateProperty = new TemplateProperty() {
+            ProductTemplate = productTemplate,
+            Property = property
+         };
+         Product product = new Product() {
+            Name = "G05_PC",
+            Price = 1600.99m,
+            Description = "Only the best PC builds",
+            Quantity = 8,
+            ProductTemplate = productTemplate
+         };
+         PropertyValue propertyValue = new PropertyValue() {
+            TextValue = "G05",
+            Product = product,
+            TemplateProperty = templateProperty
+         };
+         CustomerUser customerUser = new CustomerUser() {
+            Username = "TestUser1"
+         };
+         WishList wishlist = new WishList() {
+            Title = "TestWishlist",
+            CustomerUser = customerUser
+         };
+         Orders orders = new Orders() {
+            OrderDate = DateTime.Now,
+            CustomerUser = customerUser
 
-            };
-            OrderDetails orderDetails = new OrderDetails() {
-                Price = product.Price,
-                Order = orders,
-                Product = product
-            };
-            Cart cart = new Cart() {};
-            CartProduct cartProduct = new CartProduct() {
-                Cart = cart,
-                AddToCartDate = DateTime.Now,
-                Product = product
-            };
-            
-            StoreDbContext storeDbContext = new StoreDbContext();
+         };
+         OrderDetails orderDetails = new OrderDetails() {
+            Price = product.Price,
+            Order = orders,
+            Product = product
+         };
+         Cart cart = new Cart() { };
+         CartProduct cartProduct = new CartProduct() {
+            Cart = cart,
+            AddToCartDate = DateTime.Now,
+            Product = product
+         };
 
-            CategoryRepository c = new CategoryRepository(storeDbContext);
-            //ProductTemplateRepository pT = new ProductTemplateRepository(storeDbContext);
-            //ProductRepository p = new ProductRepository(storeDbContext);
+         StoreDbContext storeDbContext = new StoreDbContext();
 
-            c.Save(category);
-            //pT.Save(productTemplate);
-            //p.Save(product);
+         CategoryRepository c = new CategoryRepository(storeDbContext);
+         //ProductTemplateRepository pT = new ProductTemplateRepository(storeDbContext);
+         //ProductRepository p = new ProductRepository(storeDbContext);
 
-            //c.Commit();
-            storeDbContext.CommitChanges(storeDbContext);
+         c.Save(category);
+         //pT.Save(productTemplate);
+         //p.Save(product);
+
+         //c.Commit();
+         storeDbContext.SaveChanges();
 
 
-            Console.WriteLine("Success");
-            Console.ReadKey();
-        }
-    }
+         Console.WriteLine("Success");
+         Console.ReadKey();
+      }
+   }
 }

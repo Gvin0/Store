@@ -6,6 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Store.Domain.Interfaces {
-    public interface ICustomerUserRepository : IBaseRepository<CustomerUser> {
-    }
+  public interface IProductListService : IBaseService<ProductList> {
+  }
 }
